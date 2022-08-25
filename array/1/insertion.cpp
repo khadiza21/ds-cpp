@@ -23,7 +23,8 @@ int main()
     printArray(array, size);
 
     int pos, value;
-    cout << endl<< "Position of the Insertion: " << endl;
+    cout << endl
+         << "Position of the Insertion: " << endl;
     cin >> pos;
     cout << "Value of the Insertion: " << endl;
     cin >> value;
@@ -33,11 +34,15 @@ int main()
         // size - 1 ===> pos
         // 5,2,3,4,2 = array
         // pos = 2, value = 4
+        // worst case 1: insertion by swapping . time complexity O(n)
         for (int i = size - 1; i >= pos; i--)
         {
             array[i + 1] = array[i];
         }
         array[pos] = value;
+        //****best case 2: insertion  . time complexity O(1)
+        // array[size] = array[pos];
+        // array[pos] = value;
     }
     else
     {
