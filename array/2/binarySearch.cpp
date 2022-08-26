@@ -12,13 +12,11 @@ int binarySearch(int array[], int x, int lb, int ub)
         {
             return mid; // centre;
         }
-
         // x>arr[mid]
         else if (x > array[mid])
         {
             binarySearch(array, x, mid + 1, ub); // right
         }
-
         // x<arr[mid]
         else
         {
@@ -33,7 +31,6 @@ int binarySearch(int array[], int x, int lb, int ub)
 
 int main()
 {
-
     int size;
     cin >> size;
     int array[size];
