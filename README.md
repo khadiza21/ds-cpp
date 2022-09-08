@@ -1,0 +1,3 @@
+- index sequential memory allocation - ARRAY
+- 1D memory allocation : base address + index number * datatype size
+- linear search (wc : n, bc: 1)
